@@ -29,10 +29,11 @@ input {
   line-height: 40px;
   font-family: Lato;
   font-size: 18px;
+  padding-left: 5%;
 }
 
 ::placeholder {
-  padding-left: 20px;
+  /* padding-left: 20px; */
   color: rgba(205, 204, 204, 1);
 }
 
@@ -46,23 +47,24 @@ p {
 
 .city_name {
   font-size: 24px;
-  margin-top: 10%;
+  margin: 5%;
 }
 
 .temperature {
-  font-size: 64px;
+  font-size: 56px;
   margin: 0;
 }
 
 .weather_describe {
   font-size: 18px;
+  margin: 1%;
 }
 
 .max_temperature,
 .min_temperature {
   width: 50%;
   color: rgba(99, 99, 99, 1);
-  margin-top: 4%;
+  margin-top: 0%;
 }
 
 .max_temperature,
@@ -90,25 +92,82 @@ p {
   border-radius: 10px;
   border: 2px solid #FFB300;
 }
-
-.one {
-  grid-area: 1 / 1 / 2 / 2;
+p {
+  margin: 0;
+  width: auto;
 }
-.two {
+.sunrise_sunset, .humidity, .wind, .pressure, .sensed_temperature, .visibility_on_the_road {
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:  0 10%;
+}
+
+.sunrise, .sunset, .humidity {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.sunrise, .sunset{
+  height:50%;
+}
+
+.sunrise_sunset {
+  grid-area: 1 / 1 / 2 / 2;
+  font-size: 16px;
+  flex-wrap: wrap;
+  padding:  0 10%;
+}
+
+.sunrise>p, .sunset>p {
+  margin: 0;
+  width: auto;
+}
+
+.humidity {
   grid-area: 2 / 1 / 3 / 2;
 }
-.three {
+
+.wind {
   grid-area: 1 / 2 / 3 / 3;
-
+  flex-wrap: wrap;
+  padding: 10%;
 }
-.four {
+.wind>p {
+  width: 100%;
+}
+
+.pressure {
   grid-area: 3 / 1 / 4 / 3;
-
 }
-.five {
+.pressure>p, .sensed_temperature>p, .visibility_on_the_road>p {
+  margin: auto auto auto 5%;
+  width: auto;
+}
+
+.pressure>span, .sensed_temperature>span, .visibility_on_the_road>span {
+  margin: 0 auto;
+  width: auto;
+}
+
+.sensed_temperature {
   grid-area: 4 / 1 / 5 / 3;
 
 }
-.six {
+
+.visibility_on_the_road {
   grid-area: 5 / 1 / 6 / 3;
 }
+
+.iconify {
+  width: 30px;
+  height: 30px;
+  margin-left: 0; 
+}
+
+
+
+
