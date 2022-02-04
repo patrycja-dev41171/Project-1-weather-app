@@ -1,38 +1,114 @@
 .App {
+  width: 100vw;
+  max-width: 500px;
+  height: 100vh;
+  max-height: 1000px;
+  background-image: url(../public/media/sunny.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.first_section {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+input {
+  margin-top: 10%;
+  width: 80%;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(244, 244, 244, 0.8);
+  line-height: 40px;
+  font-family: Lato;
+  font-size: 18px;
+}
+
+::placeholder {
+  padding-left: 20px;
+  color: rgba(205, 204, 204, 1);
+}
+
+h1,
+h2,
+h3,
+p {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.city_name {
+  font-size: 24px;
+  margin-top: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.temperature {
+  font-size: 64px;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.weather_describe {
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.max_temperature,
+.min_temperature {
+  width: 50%;
+  color: rgba(99, 99, 99, 1);
+  margin-top: 4%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.max_temperature,
+.min_temperature > p {
+  font-size: 16px;
+}
+
+.max_temperature_element {
+  margin: 5px;
+}
+
+
+.second_section {
+  box-sizing: border-box;
+  padding:3%;
+  width: 100%;
+  height: 55%;
+  display: grid;
+  gap: 3% 3%;
+  grid-template-columns: 60% auto;
+  grid-template-rows: 25% auto;
+}
+.second_section>div {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #FFB300;
+}
+
+.one {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.two {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.three {
+  grid-area: 1 / 2 / 3 / 3;
+
+}
+.four {
+  grid-area: 3 / 1 / 4 / 3;
+
+}
+.five {
+  grid-area: 4 / 1 / 5 / 3;
+
+}
+.six {
+  grid-area: 5 / 1 / 6 / 3;
 }
