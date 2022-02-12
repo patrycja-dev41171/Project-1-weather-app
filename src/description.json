@@ -1,0 +1,9 @@
+{
+  "description" : [
+    {
+      "day": true,
+      "main": "clear",
+      "url" : "url(../public/media/day-clear.png)"
+    }
+  ]
+}

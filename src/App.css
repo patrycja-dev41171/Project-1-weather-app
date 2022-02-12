@@ -3,11 +3,53 @@
   max-width: 500px;
   height: 100vh;
   max-height: 1000px;
-  background-image: url(../public/media/sunny.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.App.day_clear {
+  background-image: url(../public/media/day-clear.png);
+}
+.App.day_cloudy {
+  background-image: url(../public/media/day-cloudy.png);
+}
+.App.day_fog {
+  background-image: url(../public/media/day-fog.png);
+}
+.App.day_rain {
+  background-image: url(../public/media/day-rain.png);
+}
+.App.day_snowy {
+  background-image: url(../public/media/day-snowy.png);
+}
+.App.day_storm {
+  background-image: url(../public/media/day-storm.png);
+}
+.App.day_very_cloudy {
+  background-image: url(../public/media/day-very-cloudy.png);
+}
+.App.night_clear {
+  background-image: url(../public/media/night-clear.png);
+}
+.App.night_cloudy {
+  background-image: url(../public/media/night-cloudy.png);
+}
+.App.night_fog {
+  background-image: url(../public/media/night-fog.png);
+}
+.App.night_rain {
+  background-image: url(../public/media/night-rain.png);
+}
+.App.night_snowy {
+  background-image: url(../public/media/night-snowy.png);
+}
+.App.night_storm {
+  background-image: url(../public/media/night-storm.png);
+}
+.App.night_very_cloudy {
+  background-image: url(../public/media/night-very-cloudy.png);
 }
 
 .first_section {
@@ -30,11 +72,11 @@ input {
   font-family: Lato;
   font-size: 18px;
   padding-left: 5%;
+  border: 2px solid gray;
 }
 
 ::placeholder {
-  /* padding-left: 20px; */
-  color: rgba(205, 204, 204, 1);
+  color: gray;
 }
 
 h1,
@@ -63,7 +105,7 @@ p {
 .max_temperature,
 .min_temperature {
   width: 50%;
-  color: rgba(99, 99, 99, 1);
+  color: rgb(54, 54, 54);
   margin-top: 0%;
 }
 
@@ -72,7 +114,7 @@ p {
   font-size: 16px;
 }
 
-.max_temperature_element {
+.max_temperature_element, .min_temperature_element {
   margin: 5px;
 }
 
@@ -88,9 +130,11 @@ p {
   grid-template-rows: 25% auto;
 }
 .second_section>div {
+  background-color: rgba(233, 233, 233, 0.26);
   box-sizing: border-box;
   border-radius: 10px;
-  border: 2px solid #FFB300;
+  border: 1px solid rgb(223, 223, 223);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 p {
   margin: 0;
