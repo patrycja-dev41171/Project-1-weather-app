@@ -5,8 +5,6 @@
   max-height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 15px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .App.day_clear {
@@ -60,17 +58,15 @@
   flex-wrap: wrap;
 }
 
-
 input {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 80%;
-  height: 40px;
+  height: 30px;
   border-radius: 15px;
-  border: none;
   background-color: rgba(244, 244, 244, 0.8);
-  line-height: 40px;
+  line-height: 30px;
   font-family: Lato;
-  font-size: 18px;
+  font-size: 14px;
   padding-left: 5%;
   border: 2px solid gray;
 }
@@ -88,17 +84,17 @@ p {
 }
 
 .city_name {
-  font-size: 24px;
-  margin: 5%;
+  font-size: 20px;
+  margin: 3%;
 }
 
 .temperature {
-  font-size: 56px;
+  font-size: 36px;
   margin: 0;
 }
 
 .weather_describe {
-  font-size: 18px;
+  font-size: 14px;
   margin: 1%;
 }
 
@@ -109,13 +105,14 @@ p {
   margin-top: 0%;
 }
 
-.max_temperature,
+.max_temperature > p,
 .min_temperature > p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .max_temperature_element, .min_temperature_element {
   margin: 5px;
+  font-size: 18px;
 }
 
 
@@ -141,6 +138,7 @@ p {
   width: auto;
 }
 .sunrise_sunset, .humidity, .wind, .pressure, .sensed_temperature, .visibility_on_the_road {
+  font-size: 14px;
   font-weight: bold;
   display:flex;
   justify-content: center;
@@ -161,7 +159,6 @@ p {
 
 .sunrise_sunset {
   grid-area: 1 / 1 / 2 / 2;
-  font-size: 16px;
   flex-wrap: wrap;
   padding:  0 10%;
 }
@@ -207,11 +204,48 @@ p {
 }
 
 .iconify {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin-left: 0; 
 }
 
 
+@media (min-width:500px) {
+  .App {
+    border-radius: 15px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  input {
+    margin-top: 10%;
+    height: 40px;
+    border-radius: 15px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+  .city_name {
+    font-size: 24px;
+    margin: 5%;
+  }
+  .temperature {
+    font-size: 56px;
+  }
+  .weather_describe {
+    font-size: 18px;
+  }
+  .max_temperature > p,
+.min_temperature > p {
+  font-size: 18px;
+}
+.max_temperature_element, .min_temperature_element {
+  font-size: 24px;
+}
+.sunrise_sunset, .humidity, .wind, .pressure, .sensed_temperature, .visibility_on_the_road {
+  font-size: 18px;
+}
+.iconify {
+  width: 30px;
+  height: 30px;
+}
+}
 
 
