@@ -24,7 +24,6 @@ React, JavaScript, HTML, CSS
 ## Lessons Learned
 
 While building this project, I learned how to create simple React components. This was my first project using an external API. Working on this project caused me a few problems, but also a lot of satisfaction from solving them.
-While building this project, I learned how to create simple React components. This was my first project using an external API. Working on this project caused me a few problems, but also a lot of satisfaction from solving them.
 
 
 
